@@ -8,7 +8,7 @@
         background-size: cover;
     }
     h1 {
-        background-color: cyan;
+        background-color: yellow;
         text-align: center;
         border-radius: 30%;
     }
@@ -25,6 +25,11 @@
         transition-duration: 0.4s;
         cursor: pointer;
     }
+    .abcd {}
+    .abcd:hover {
+        background-color: red;
+        border-color: red;
+    }
     .button1 {
         background-color: white; 
         color: black; 
@@ -39,6 +44,7 @@
     .insta:hover {
         background-color: violet;
         color: white;
+        animation: effect 0.4s infinite;
     }
 
     .facebook {
@@ -50,6 +56,7 @@
     .facebook:hover {
         background-color: violet;
         color: white;
+        animation: effect 0.4s infinite;
     }
     .whats {
         background-color: white;
@@ -59,10 +66,36 @@
     .whats:hover {
         background-color: chartreuse;
         color: white;
+        animation: effect 0.4s infinite;
     }
-</style>
-<button onclick="alert('Still in progress')"><h1>My Portfolio</h1></button>
-
+    @keyframes effect { 
+        0% { 
+            transform: translateX(0px) rotate(0deg); 
+        } 
+  
+        20% { 
+            transform: translateX(-4px) rotate(-4deg); 
+        } 
+  
+        40% { 
+            transform: translateX(-2px) rotate(-2deg); 
+        } 
+  
+        60% { 
+            transform: translateX(4px) rotate(4deg); 
+        } 
+  
+        80% { 
+            transform: translateX(2px) rotate(2deg); 
+        } 
+  
+        100% { 
+            transform: translateX(0px) rotate(0deg); 
+        } 
+    } 
+</style><marquee>
+<button class="abcd"><a href="portfolio.html"><h1>My Portfolio</h1></a></button>
+</marquee>
 <div>
 <main>
     <h2>Contact Me:</h2>
@@ -71,7 +104,7 @@
     <button class="button insta"><a href="https://www.instagram.com/_.atishay03/"><i class="fab fa-instagram fa-2x"></i></a></button>
     <button class="button facebook"><a href="https://www.facebook.com/atishay.jain.543908/"><i class="fab fa-facebook fa-2x"></i></a></button>
     <button class="button facebook"><a href="https://twitter.com/Atishay09470074"><i class="fab fa-twitter fa-2x"></i></a></button>
-    <button class="button facebook"><a href="https://www.linkedin.com/in/atishay-jain-b12436202/"><i class="fab fa-linkedin fa-2x"></i></a></button>
+    <button class="button facebook"><a href="https://www.linkedin.com/in/atishay-jain-2b0656206/"><i class="fab fa-linkedin fa-2x"></i></a></button>
 </main>
 </div>
 </html>
